@@ -5,6 +5,8 @@ Another lovely WP theme
 
 ## Work in Progress.
 
+This theme **is not ready** yet. It works, the design is almost finished but there are some options to add. Install only for **testing** or suggestions. **Do not use it for your blog**, you may encounter some problems :)
+
 ### Screenshots
 
 ![image](Screenshots/ScreenShot-01.png)
