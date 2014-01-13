@@ -29,16 +29,18 @@ endif;
 
         if ( have_posts() ) :
 
-            while (have_posts()) : the_post();
+            while (have_posts()) : the_post(); // Start the loop
 
                 get_template_part('templates/content', get_post_format());
 
             endwhile;
 
+                // Previous/next page nav
                 hugo_page_nav();
 
         else :
 
+                // If no content, load "nope" template
                 get_template_part('templates/content', 'nope');
 
         endif;

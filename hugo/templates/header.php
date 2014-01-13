@@ -9,9 +9,10 @@
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?> >
 <head>
-     <?php if ( function_exists( 'get_option_tree') ) {
-        $theme_options = get_option('option_tree');
-      } ?>
+<?php if ( function_exists( 'get_option_tree') ) {
+    // Load the option-tree var
+    $theme_options = get_option('option_tree');
+} ?>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
 
@@ -43,7 +44,7 @@
     <?php wp_head(); ?>
 
 <style type="text/css">
-<?php
+<?php // Style used for custom theme colors
     if ( !empty($theme_options['custom_theme_color']) ) {
         echo '    .nav .active a,
     .navbar-nav li a:hover,

@@ -8,7 +8,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <?php
-        if ( is_sticky() ) {
+        if ( is_sticky() ) { // Add the sticky css if the post is "sticky"
             echo '<div class="sticky-flag"><i title="Wiggle, wiggle Mister Sticky (^_^)" class="fa fa-thumb-tack wiggle"></i></div>';
         }
     ?>
