@@ -57,7 +57,7 @@ get_template_part('templates/footer');
 /**
  * @todo add nivo slider
  */
-
+/*
 if ( is_home() && function_exists('show_nivo_slider') ) {
     show_nivo_slider();
 }
