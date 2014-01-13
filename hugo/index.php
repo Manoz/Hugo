@@ -14,14 +14,15 @@ if ( function_exists( 'get_option_tree') ) {
 
 $layout = get_option_tree('homepage_layout',$theme_options);
 
-if ( $layout == "left-sidebar" ) :
+// Choose the layout with options used in admin pannel.
+if ( $layout == "left-sidebar" ) : // Left sidebar homepage
     get_sidebar();
     echo '<div class="main-content col-8-12">';
 
-elseif ( $layout == "full-width" ) :
+elseif ( $layout == "full-width" ) : // Full width homepage
     echo '<div class="main-content col-1-1">';
 
-elseif ( $layout == "right-sidebar" ) :
+elseif ( $layout == "right-sidebar" ) : // Right sidebar homepage
     echo '<div class="main-content col-8-12">';
 
 endif;
@@ -44,14 +45,18 @@ endif;
 
     echo '</div>';
 
-if ( $layout == "right-sidebar" ) :
+if ( $layout == "right-sidebar" ) : // Right sidebar homepage
     get_sidebar();
 endif;
 
 get_template_part('templates/footer');
 
 
-/*if ( is_home() && function_exists('show_nivo_slider') ) {
+/**
+ * @todo add nivo slider
+ */
+
+if ( is_home() && function_exists('show_nivo_slider') ) {
     show_nivo_slider();
 }
 */
