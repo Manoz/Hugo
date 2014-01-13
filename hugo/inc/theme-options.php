@@ -209,6 +209,7 @@ function custom_theme_options() {
                         'value'     => 'Yes'
                     )
                 ),
+                'std'           => 'Yes',
                 'section'       => 'template'
             ),
             array(
@@ -222,6 +223,7 @@ function custom_theme_options() {
                         'value'     => 'Yes'
                     )
                 ),
+                'std'           => 'Yes',
                 'section'       => 'template'
             ),
             array(
@@ -235,6 +237,7 @@ function custom_theme_options() {
                         'value'     => 'Yes'
                     )
                 ),
+                'std'           => 'Yes',
                 'section'       => 'template'
             ),
             // Social networks
