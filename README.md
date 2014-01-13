@@ -5,6 +5,18 @@ Another lovely WP theme
 
 ## Work in Progress.
 
+### Screenshots
+
+![image](Screenshots/ScreenShot-01.png)
+
+![image](Screenshots/ScreenShot-02.png)
+
+![image](Screenshots/ScreenShot-08.png)
+
+![image](Screenshots/ScreenShot-13.png)
+
+
+
 ### Todo: 
 
 - [x] Build the skeleton
