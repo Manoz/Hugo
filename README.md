@@ -15,7 +15,9 @@ Another lovely WP theme
 
 ![image](Screenshots/ScreenShot-13.png)
 
+### Demo
 
+You can see a demo here : http://www.mwanoz.fr/dev-wp/ (work in progress too)
 
 ### Todo: 
 
