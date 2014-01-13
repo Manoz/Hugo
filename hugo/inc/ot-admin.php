@@ -11,14 +11,14 @@
  * Comment the filter to show the documentation.
  * Uncomment to hide.
  */
-//add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_show_pages', '__return_false' );
 
 
 // Required: set 'ot_theme_mode' filter to true.
 add_filter( 'ot_theme_mode', '__return_true' );
 
 // Required: include OptionTree.
-include_once( '/../option-tree/ot-loader.php' );
+require_once locate_template('/option-tree/ot-loader.php');
 
 // Theme Options
 include_once( 'theme-options.php' );
