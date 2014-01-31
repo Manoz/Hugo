@@ -63,24 +63,6 @@ function custom_theme_options() {
                 'section'     => 'general'
             ),
             array(
-                'label'         => 'Disable Smooth Scrool?',
-                'id'            => 'smooth_scrool',
-                'type'          => 'checkbox',
-                'desc'          => 'Check if you want to disable the lovely smooth scrool.',
-                'choices'       => array(
-                    array(
-                        'label'     => 'Yes',
-                        'value'     => 'Yes'
-                    )
-                ),
-                'std'           => '',
-                'rows'          => '',
-                'post_type'     => '',
-                'taxonomy'      => '',
-                'class'         => '',
-                'section'       => 'general'
-            ),
-            array(
                 'label'         => 'Your custom CSS',
                 'id'            => 'custom_css',
                 'type'          => 'textarea-simple',
