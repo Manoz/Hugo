@@ -22,9 +22,8 @@ body {
     margin-top: -1px;
     width: 100%;
     border: 1px solid #d8d8d8;
+    border-top: none;
     background-color: #f5f5f5;
-    -webkit-box-shadow: 0 -30px 30px -4px #999;
-    box-shadow: 0 -30px 30px -4px #999;
 }
 
 .main-content.col-1-1 {
@@ -32,26 +31,8 @@ body {
 }
 
 .main-content.col-8-12 {
+    padding-top: 10px;
     padding-right: 10px;
-}
-
-.site-header {
-    min-height: 150px;
-    background-color: #f5f5f5;
-}
-
-.site-nav {
-    position: relative;
-    text-align: center;
-    background-color: #fff;
-    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.15);
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
-    opacity: 1;
-    -webkit-transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -ms-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-    transition: opacity .5s ease-out;
 }
 
 article.post,
@@ -235,6 +216,24 @@ big {font-size: 120%; font-weight: 300;}
   =Header
 -------------------------------------------------------------------- */
 
+.h-header {
+    background-color: #f5f5f5;
+}
+
+.h-nav-wrapp {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -ms-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+
 .site-title {
     margin: 0;
     text-align: center;
@@ -297,7 +296,7 @@ big {font-size: 120%; font-weight: 300;}
 
 /* Top bar
 ------------------------------------- */
-.top-bar {
+.h-topbar {
     background-color: #444;
     padding-left: 20px;
 }
@@ -411,6 +410,8 @@ big {font-size: 120%; font-weight: 300;}
     padding: 3px 20px;
     border-right: 2px solid transparent;
     border-bottom: 0;
+    text-align: left;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.428571429;
     white-space: nowrap;
@@ -1018,6 +1019,10 @@ div.share-post-com {
     cursor: default;
 }
 
+.bypostauthor {
+
+}
+
 /* Comments respond
 ------------------------------------- */
 .comment-respond {
@@ -1449,6 +1454,10 @@ ul.wp-tag-cloud li a:before {
     background-color: #EBEBEB;
 }
 
+.gallery-caption {
+
+}
+
 .wp-caption-text {
     padding-top: 10px;
     text-align: center;
@@ -1561,6 +1570,13 @@ div.clear {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .site-title {
+        line-height: 1;
+        margin: 15px auto;
+    }
 
+    .fixed-nav {
+        display: none;
+    }
 }

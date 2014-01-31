@@ -10,11 +10,9 @@
 (function($) {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) /* top bar height + site-title height */ {
-            $('.site-nav').addClass('fixed-nav');
-            $('.wild-title').css('margin-left', '20px');
+            $('.h-nav-wrapp').addClass('fixed-nav');
         } else {
-            $('.site-nav').removeClass('fixed-nav');
-            $('.wild-title').css('margin-left', '-560px');
+            $('.h-nav-wrapp').removeClass('fixed-nav');
         }
     });
 })(jQuery);

@@ -78,56 +78,56 @@
 </style>
 </head>
 <body <?php body_class(); ?> >
-    <header class="site-header" id="banner" role="banner">
-        <div class="site-header-content">
-        <?php
-            $top_bar = get_option_tree('show_top_bar',$theme_options);
-            $show_search = get_option_tree('top_bar_search',$theme_options);
-            $show_social = get_option_tree('top_bar_social',$theme_options);
+    <header class="h-header" role="banner">
+        <div class="h-topbar">
+            <?php
+                $top_bar = get_option_tree('show_top_bar',$theme_options);
+                $show_search = get_option_tree('top_bar_search',$theme_options);
+                $show_social = get_option_tree('top_bar_social',$theme_options);
+
             if ( $top_bar == 'Yes' ) { ?>
-                <div class="top-bar">
-                    <?php
-                        if (has_nav_menu('top_bar_menu')) :
-                            wp_nav_menu(array('theme_location' => 'top_bar_menu', 'menu_class' => 'nav topbar-nav'));
-                        endif;
-
-                    if ( $show_search == 'Yes' ) { ?>
-                        <div class="top-search">
-                            <?php get_search_form(); ?>
-                        </div>
-                    <?php }
-
-                    if ( $show_social == 'Yes' ) { ?>
-                        <ul class="top-social">
-                            <?php if ( get_option_tree('social_fb', $theme_options) != '') { ?>
-                            <li><a title="Facebook" target="_blank" href="<?php echo get_option_tree('social_fb', $theme_options);?>"><i class="fa fa-facebook"></i></a></li>
-
-                            <?php } if ( get_option_tree('social_tw', $theme_options) != '') { ?>
-                            <li><a title="Twitter" target="_blank" href="<?php echo get_option_tree('social_tw', $theme_options);?>"><i class="fa fa-twitter"></i></a></li>
-
-                            <?php } if ( get_option_tree('social_goog', $theme_options) != '') { ?>
-                            <li><a title="Google+" target="_blank" href="<?php echo get_option_tree('social_goog', $theme_options);?>"><i class="fa fa-google-plus"></i></a></li>
-
-                            <?php } if ( get_option_tree('social_yt', $theme_options) != '') { ?>
-                            <li><a title="YouTube" target="_blank" href="<?php echo get_option_tree('social_yt', $theme_options);?>"><i class="fa fa-youtube"></i></a></li>
-                            <?php } ?>
-                        </ul>
-                    <?php } ?>
-                    <div class="clear"></div>
-                </div>
-            <?php } ?>
-
-            <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><span>.</span></a></h1>
-            <div class="site-nav">
-            <div class="wild-title">
-                <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><span>.</span></a>
-            </div>
                 <?php
-                  if (has_nav_menu('primary_navigation')) :
-                    wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-                  endif;
-                ?>
-            </div>
+                if (has_nav_menu('top_bar_menu')) :
+                    wp_nav_menu(array('theme_location' => 'top_bar_menu', 'menu_class' => 'nav topbar-nav'));
+                endif;
+
+                if ( $show_search == 'Yes' ) { ?>
+
+                <div class="top-search">
+                    <?php get_search_form(); ?>
+                </div>
+
+                <?php }
+
+                if ( $show_social == 'Yes' ) { ?>
+                    <ul class="top-social">
+                        <?php if ( get_option_tree('social_fb', $theme_options) != '') { ?>
+                        <li><a title="Facebook" target="_blank" href="<?php echo get_option_tree('social_fb', $theme_options);?>"><i class="fa fa-facebook"></i></a></li>
+
+                        <?php } if ( get_option_tree('social_tw', $theme_options) != '') { ?>
+                        <li><a title="Twitter" target="_blank" href="<?php echo get_option_tree('social_tw', $theme_options);?>"><i class="fa fa-twitter"></i></a></li>
+
+                        <?php } if ( get_option_tree('social_goog', $theme_options) != '') { ?>
+                        <li><a title="Google+" target="_blank" href="<?php echo get_option_tree('social_goog', $theme_options);?>"><i class="fa fa-google-plus"></i></a></li>
+
+                        <?php } if ( get_option_tree('social_yt', $theme_options) != '') { ?>
+                        <li><a title="YouTube" target="_blank" href="<?php echo get_option_tree('social_yt', $theme_options);?>"><i class="fa fa-youtube"></i></a></li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+                <div class="clear"></div>
+            <?php } ?>
+        </div>
+
+        <div class="h-brand">
+        <?php $show_dot = get_option_tree('title_dot',$theme_options); ?>
+            <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><?php if ( $show_dot == 'Yes' ) { ?><span>.</span><?php } ?></a></h1>
+        </div>
+        <div class="h-nav-wrapp">
+            <?php
+                if (has_nav_menu('primary_navigation')) :
+                wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+            endif; ?>
         </div>
     </header>
 

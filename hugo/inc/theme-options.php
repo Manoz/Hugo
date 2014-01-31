@@ -195,6 +195,20 @@ function custom_theme_options() {
                 'section'       => 'template'
             ),
             array(
+                'label'         => 'Show dot title?',
+                'id'            => 'title_dot',
+                'type'          => 'checkbox',
+                'desc'          => 'Show the dot after the site title?',
+                'choices'       => array(
+                    array(
+                        'label'     => 'Yes',
+                        'value'     => 'Yes'
+                    )
+                ),
+                'std'           => 'Yes',
+                'section'       => 'template'
+            ),
+            array(
                 'label'         => 'Show top bar search?',
                 'id'            => 'top_bar_search',
                 'type'          => 'checkbox',
