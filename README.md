@@ -19,7 +19,7 @@ This theme **is not ready** yet. It works, the design is almost finished but the
 
 ### Demo
 
-You can see a demo here : http://www.mwanoz.fr/dev-wp/ (work in progress too)
+I prefer remove the demo link for now because the old one was my dev lab. I'll upload Hugo in a real server soon.
 
 ### Todo: 
 
@@ -31,8 +31,8 @@ You can see a demo here : http://www.mwanoz.fr/dev-wp/ (work in progress too)
 - [x] Add homepage template
 - [x] Add styles switcher
 - [x] Add social options
-- [ ] Add more options
-- [ ] Drink coffee
+- [x] Add more options
+- [x] Drink coffee
 - [ ] Add fonts options
 - [ ] Add some styles to posts formats
 - [ ] Add some widgets
